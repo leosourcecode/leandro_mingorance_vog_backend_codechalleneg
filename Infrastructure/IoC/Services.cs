@@ -17,6 +17,7 @@ namespace Infrastructure.IoC
         {
             // Services
             services.AddTransient<IDepartmentService, DepartmentService>();
+            services.AddTransient<IEmployeeService, EmployeeService>();
         }
     }
 }

@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  vogcodechallengeapi:
+    image: vogcodechallenge
+    build:
+      context: .
+    ports:
+      - "20000:80"
+    networks:
+      - vog-network
+
+networks: 
+    vog-network:
+        driver: bridge
